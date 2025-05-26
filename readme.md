@@ -19,11 +19,7 @@ Projeto desenvolvido para o **Desafio Integrador** da faculdade **[Campo Real]**
 - [Font Awesome](https://fontawesome.com/)  
 - Git (controle de versão)
 
-## Estrutura do Projeto
-
-smart-home/
-├── index.html # Página principal
-├── style.css # Estilos principais
-├── script.js # Lógica JavaScript
-├── README.md # Este arquivo
-└── img/ # Pasta com imagens utilizadas
+## Integrantes:
+- Luiz Henrique de Castro Almeida
+- Deividy Ferreira
+- Thomas Andriel
