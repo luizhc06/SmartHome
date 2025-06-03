@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SmartHome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Header modificado para dashboard -->
+        <section class="top-header">
+            <div class="interface"> 
+                <div class="logotipo">
+                    <h1>SmartHome Dashboard</h1>
+                    <p>Bem-vindo ao seu painel de controle</p>
+                </div>
+                <div class="user-menu">
+                    <span id="userName">Usuário</span>
+                    <button id="logoutBtn">Sair</button>
+                </div>
+            </div>
+        </section>
+        <!-- ... resto do header similar ... -->
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="interface">
+                <h2 class="titulo">Controle <span>Residencial</span></h2>
+                
+                <div class="devices-grid">
+                    <!-- Exemplo de dispositivo -->
+                    <div class="device-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Luz da Sala</h3>
+                        <div class="device-switch">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Adicione mais dispositivos aqui -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Verifica se o usuário está logado
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        if (!currentUser) {
+            alert("Acesso não autorizado!");
+            window.location.href = "auth/login.html";
+        }
+
+        // Atualiza o nome do usuário
+        document.getElementById('userName').textContent = currentUser.name;
+        
+        // Logout
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            localStorage.removeItem('currentUser');
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

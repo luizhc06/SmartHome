@@ -1,229 +1,548 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartHome - Automação Residencial</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartHome - Automação Residencial</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <section class="top-header">
-            <div class="interface"> 
-                <div class="logotipo">
-                    <h1>SmartHome</h1>
-                    <p>Transforme sua casa em um lar inteligente</p>
-                </div>
-                <div class="btn-social">
-                    <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
-                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                    <a href="#"><button><i class="bi bi-facebook"></i></button></a>
-                </div>
-            </div>
-        </section>
 
-        <section class="bottom-header">
-            <div class="interface">
-                <nav>
-                    <div class="mobile-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                    <ul class="nav-list">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#sobre">SOBRE</a></li>
-                        <li class="drop-hover"><a href="#servicos">SERVIÇOS <i class="bi bi-caret-down"></i></a>
-                            <div class="dropp">
-                                <a href="#alexa">Integração Alexa</a>
-                                <a href="#seguranca">Segurança</a>
-                                <a href="#iluminacao">Iluminação</a>
-                                <a href="#climatizacao">Climatização</a>
-                            </div>
-                        </li>
-                        <li><a href="#projetos">PROJETOS</a></li>
-                        <li><a href="#contato">CONTATO</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-    </header>
+<header>
+  <!-- Topo -->
+  <section class="top-header">
+    <div class="interface">
+      <div class="logotipo">
+        <h1>SmartHome</h1>
+        <p>Transforme sua casa em um lar inteligente</p>
+      </div>
+      <div class="btn-social">
+        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+        <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="interface">
-                <div class="hero-content">
-                    <h1>Automação Residencial <span>Premium</span></h1>
-                    <p>Controle sua casa de qualquer lugar do mundo com nossa tecnologia de ponta. Segurança, conforto e eficiência energética em um único sistema.</p>
-                    <div class="btn-contato">
-                        <a href="#contato">
-                            <button>Solicite um Orçamento</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="carrossel">
-            <div class="interface">
-                <h2 class="titulo">Nossas <span>Soluções</span></h2>
-                <div class="carrossel-wrapper">
-                    <div class="carrossel-container">
-                        <div class="carrossel-item active">
-                            <div class="carrossel-img">
-                                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Casa Inteligente">
-                            </div>
-                            <div class="carrossel-info">
-                                <h3>Casas Inteligentes</h3>
-                                <p>Sistemas completos para automatizar sua residência com tecnologia de última geração.</p>
-                            </div>
-                        </div>
-                        <div class="carrossel-item">
-                            <div class="carrossel-img">
-                                <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Integração Alexa">
-                            </div>
-                            <div class="carrossel-info">
-                                <h3>Integração com Alexa</h3>
-                                <p>Controle sua casa por voz com assistentes virtuais como Alexa e Google Assistant.</p>
-                            </div>
-                        </div>
-                        <div class="carrossel-item">
-                            <div class="carrossel-img">
-                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Sistema de Segurança">
-                            </div>
-                            <div class="carrossel-info">
-                                <h3>Segurança Inteligente</h3>
-                                <p>Câmeras, sensores e alarmes integrados que você monitora pelo celular.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carrossel-controles">
-                        <button class="carrossel-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="carrossel-next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <h2 class="titulo">Sobre <span>Nós</span></h2>
-                <div class="sobre-content">
-                    <div class="sobre-img">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipe SmartHome">
-                    </div>
-                    <div class="sobre-texto">
-                       <p>Fundada em 2025, a SmartHome rapidamente se tornou referência em automação residencial no Brasil. Com uma década de experiência, transformamos residências em ambientes inteligentes, priorizando conforto, segurança e eficiência energética.</p>
-                        <p>Contamos com uma equipe altamente qualificada de engenheiros e técnicos especializados, dedicada a desenvolver soluções sob medida para cada cliente, garantindo uma experiência única e inovadora em automação residencial.</p>
-                        <div class="btn-sobre">
-                        <div class="btn-sobre">
-                            <a href="#contato">
-                                <button>Fale Conosco</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="servicos" id="servicos">
-            <div class="interface">
-                <h2 class="titulo">Nossos <span>Serviços</span></h2>
-                <div class="servicos-grid">
-                    <div class="servico-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Iluminação Inteligente</h3>
-                        <p>Controle de lâmpadas e cortinas com timer, sensores de presença e comandos de voz.</p>
-                    </div>
-                    <div class="servico-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Segurança Residencial</h3>
-                        <p>Câmeras IP, fechaduras digitais, sensores de movimento e alarmes monitorados 24h.</p>
-                    </div>
-                    <div class="servico-card">
-                        <i class="fas fa-thermometer-half"></i>
-                        <h3>Climatização</h3>
-                        <p>Controle de ar-condicionado, aquecedores e ventilação automatizada.</p>
-                    </div>
-                    <div class="servico-card">
-                        <i class="fas fa-music"></i>
-                        <h3>Áudio e Vídeo</h3>
-                        <p>Sistemas de som ambiente, home theater e TVs integradas ao sistema.</p>
-                    </div>
-                    <div class="servico-card">
-                        <i class="fas fa-plug"></i>
-                        <h3>Energia</h3>
-                        <p>Monitoramento de consumo e controle de tomadas inteligentes.</p>
-                    </div>
-                    <div class="servico-card">
-                        <i class="fas fa-assistive-listening-systems"></i>
-                        <h3>Assistentes Virtuais</h3>
-                        <p>Integração com Alexa, Google Assistant e Siri para controle por voz.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contato" id="contato">
-            <div class="interface">
-                <h2 class="titulo">Fale <span>Conosco</span></h2>
-                <form action="" class="form-contato">
-                    <div class="input-box">
-                        <input type="text" name="" id="" placeholder="Seu nome completo" required>
-                        <input type="email" name="" id="" placeholder="Seu e-mail" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="tel" name="" id="" placeholder="Seu telefone">
-                        <input type="text" name="" id="" placeholder="Assunto">
-                    </div>
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR">
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="interface">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>SmartHome</h3>
-                    <p>Transformando casas em lares inteligentes desde 2025.</p>
-                    <div class="btn-social">
-                        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
-                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="#"><button><i class="bi bi-facebook"></i></button></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Links Úteis</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contato</h3>
-                    <ul>
-                        <li><i class="bi bi-envelope"></i> contato@smarthome.com.br</li>
-                        <li><i class="bi bi-telephone"></i> (42) 99976-2203</li>
-                        <li><i class="bi bi-geo-alt"></i> Guarapuava - PR</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 SmartHome - Todos os direitos reservados</p>
-            </div>
+  <!-- Navegação -->
+  <section class="bottom-header">
+    <div class="interface">
+      <nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-    </footer>
+        <ul class="nav-list">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li class="drop-hover"><a href="#servicos">SERVIÇOS <i class="bi bi-caret-down"></i></a>
+            <div class="dropp">
+              <a href="Services/alexa.html">Integração Alexa</a>
+              <a href="Services/seguranca.html">Segurança</a>
+              <a href="Services/iluminacao.html">Iluminação</a>
+              <a href="Services/climatizacao.html">Climatização</a>
+            </div>
+          </li>
+          <li><a href="#loja">LOJA</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header> 
 
-    <script src="script.js"></script>
+<main>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="interface">
+      <div class="hero-content">
+        <h1>Automação Residencial <span>Premium</span></h1>
+        <p>Controle sua casa de qualquer lugar do mundo com nossa tecnologia de ponta. Segurança, conforto e eficiência energética em um único sistema.</p>
+        <div class="btn-contato">
+          <a href="#contato"><button>Solicite um Orçamento</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrossel -->
+  <section class="carrossel">
+    <div class="interface">
+      <h2 class="titulo">Nossas <span>Soluções</span></h2>
+      <div class="carrossel-wrapper">
+        <div class="carrossel-container">
+          <div class="carrossel-item active">
+            <div class="carrossel-img">
+              <img src="Content/SmartHome.jpg" alt="Casa Inteligente">            </div>
+            <div class="carrossel-info">
+              <h3>Casas Inteligentes</h3>
+              <p>Sistemas completos para automatizar sua residência com tecnologia de última geração.</p>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="carrossel-img">
+              <img src="Content/Alexa.jpg" alt="Integração Alexa">
+            </div>
+            <div class="carrossel-info">
+              <h3>Integração com Alexa</h3>
+              <p>Controle sua casa por voz com assistentes virtuais como Alexa e Google Assistant.</p>
+            </div>
+          </div>
+          <div class="carrossel-item">
+            <div class="carrossel-img">
+              <img src="Content/Seguranca.jpg" alt="Sistema de Segurança">
+            </div>
+            <div class="carrossel-info">
+              <h3>Segurança Inteligente</h3>
+              <p>Câmeras, sensores e alarmes integrados que você monitora pelo celular.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carrossel-controles">
+          <button class="carrossel-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carrossel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="interface">
+      <h2 class="titulo">Sobre <span>Nós</span></h2>
+      <div class="sobre-content">
+        <div class="sobre-img">
+          <img src="Content/SmartHome3.jpg" alt="Equipe SmartHome">
+        </div>
+        <div class="sobre-texto">
+          <p>Fundada em 2025, a SmartHome rapidamente se tornou referência em automação residencial no Brasil. Com uma década de experiência, transformamos residências em ambientes inteligentes, priorizando conforto, segurança e eficiência energética.</p>
+          <p>Contamos com uma equipe altamente qualificada de engenheiros e técnicos especializados, dedicada a desenvolver soluções sob medida para cada cliente, garantindo uma experiência única e inovadora em automação residencial.</p>
+          <div class="btn-sobre">
+            <a href="#contato"><button>Fale Conosco</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="servicos" id="servicos">
+    <div class="interface">
+      <h2 class="titulo">Nossos <span>Serviços</span></h2>
+      <div class="servicos-grid">
+        <div class="servico-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Iluminação Inteligente</h3>
+          <p>Controle de lâmpadas e cortinas com timer, sensores de presença e comandos de voz.</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Segurança Residencial</h3>
+          <p>Câmeras IP, fechaduras digitais, sensores de movimento e alarmes monitorados 24h.</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-thermometer-half"></i>
+          <h3>Climatização</h3>
+          <p>Controle de ar-condicionado, aquecedores e ventilação automatizada.</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-music"></i>
+          <h3>Áudio e Vídeo</h3>
+          <p>Sistemas de som ambiente, home theater e TVs integradas ao sistema.</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-plug"></i>
+          <h3>Energia</h3>
+          <p>Monitoramento de consumo e controle de tomadas inteligentes.</p>
+        </div>
+        <div class="servico-card">
+          <i class="fas fa-assistive-listening-systems"></i>
+          <h3>Assistentes Virtuais</h3>
+          <p>Integração com Alexa, Google Assistant e Siri para controle por voz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loja -->
+  <section class="loja" id="loja">
+    <div class="interface">
+      <h2 class="titulo">Nossa <span>Loja</span></h2>
+      <p class="subtitulo">Produtos de automação residencial para você comprar e instalar agora mesmo!</p>
+      
+      <div class="categorias">
+        <button class="categoria-btn active" data-categoria="todos">Todos</button>
+        <button class="categoria-btn" data-categoria="alexa">Alexa</button>
+        <button class="categoria-btn" data-categoria="iluminacao">Iluminação</button>
+        <button class="categoria-btn" data-categoria="seguranca">Segurança</button>
+        <button class="categoria-btn" data-categoria="climatizacao">Climatização</button>
+      </div>
+      
+      <div class="produtos-grid">
+        <!-- Produto 1 -->
+        <div class="produto-card" data-categoria="alexa">
+          <img src="Content/EchoDot4.jpg" alt="Echo Dot">
+          <h3>Echo Dot (4ª Geração)</h3>
+          <p>O melhor smart speaker com Alexa, controle músicas apenas com sua voz. Ouça músicas do Amazon Music, Apple Music, Spotify, Deezer e outros por toda sua casa com o recurso música multiambiente ou ainda escute estações de rádios.</p>
+          <div class="produto-info">
+            <span class="preco">R$ 499,00</span>
+            <button class="btn-comprar" data-produto="Echo Dot">Comprar</button>
+          </div>
+        </div>
+        
+        <!-- Produto 2 -->
+        <div class="produto-card" data-categoria="iluminacao">
+          <img src="Content/lampada.jpeg" alt="Lâmpada Inteligente">
+          <h3>Lâmpada Smart Wi-Fi Positivo ou Elgin</h3>
+          <p>Lâmpada que conecta ao Wi-Fi e pode ser controlada por voz ou aplicativo. Você ajusta o brilho, muda a cor (em modelos RGB), programa horários para ligar/desligar e cria rotinas automáticas.</p>
+          <div class="produto-info">
+            <span class="preco">R$ 50 a R$ 90</span>
+            <button class="btn-comprar" data-produto="Lâmpada Inteligente">Comprar</button>
+          </div>
+        </div>
+        
+        <!-- Produto 3 -->
+        <div class="produto-card" data-categoria="seguranca">
+          <img src="Content/camera.jpeg" alt="Câmera de Segurança">
+          <h3>TP-Link Tapo C200</h3>
+          <p>Câmera que se conecta ao Wi-Fi, permite monitorar a casa pelo app, gira automaticamente para seguir movimento, grava vídeos em alta definição e envia alertas de segurança no celular. Também pode ser controlada por voz.</p>
+          <div class="produto-info">
+            <span class="preco">R$ 189,00</span>
+            <button class="btn-comprar" data-produto="Câmera de Segurança">Comprar</button>
+          </div>
+        </div>
+        
+        <!-- Produto 4 -->
+        <div class="produto-card" data-categoria="climatizacao">
+          <img src="Content/termostato.jpeg" alt="Termostato Inteligente">
+          <h3>Termostato Inteligente</h3>
+          <p>ermostato inteligente com controle por aplicativo Tuya, compatível com Alexa e Google Assistant. Possui tela LED touch, controle remoto, programação semanal e bloqueio para crianças.</p>
+          <div class="produto-info">
+            <span class="preco">R$ 428,99</span>
+            <button class="btn-comprar" data-produto="Termostato Inteligente">Comprar</button>
+          </div>
+        </div>
+        
+        <!-- Produto 5 -->
+        <div class="produto-card" data-categoria="alexa">
+          <img src="Content/echoshow.jpeg" alt="Echo Show">
+          <h3>Echo Show 8</h3>
+          <p>Melhor por dentro e por fora o entretenimento é mais envolvente com áudio espacial e uma tela sensível ao toque hd de 8. Sua casa está mais conectada do que nunca com o hub doméstico inteligente integrado.</p>
+          <div class="produto-info">
+            <span class="preco">R$ 799,00</span>
+            <button class="btn-comprar" data-produto="Echo Show 8">Comprar</button>
+          </div>
+        </div>
+        
+        <!-- Produto 6 -->
+        <div class="produto-card" data-categoria="iluminacao">
+          <img src="Content/led.jpg" alt="Fita LED Inteligente">
+          <h3>Fita LED Inteligente</h3>
+          <p>Fita Led 5Metros RGB 5050 IP65 - Kit Completo Controle e Fonte. Quanto mais tiras de LED você conectar, maior será a área de iluminação dinâmica. Com os modos de luz dinâmica e sensibilidade ao microfone.</p>
+          <div class="produto-info">
+            <span class="preco">R$ 59,90</span>
+            <button class="btn-comprar" data-produto="Fita LED Inteligente">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato-direto" id="contato">
+    <div class="interface">
+      <div class="contato-container">
+        <div class="contato-info">
+          <h2>Entre em Contato Diretamente</h2>
+          <p>Estamos prontos para transformar sua casa em um lar inteligente!</p>
+          
+          <div class="contato-item">
+            <i class="bi bi-whatsapp"></i>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>(42) 99976-2203</p>
+              <a href="https://wa.me/5542999762203" class="btn-contato" target="_blank">
+                <button>Enviar Mensagem</button>
+              </a>
+            </div>
+          </div>
+          
+          <div class="contato-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>contato@smarthome.com.br</p>
+              <a href="mailto:contato@smarthome.com.br" class="btn-contato">
+                <button>Enviar Email</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contato-form">
+          <h2>Ou solicite um orçamento</h2>
+          <form id="orcamentoForm">
+            <div class="input-box">
+              <input type="text" id="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="input-box">
+              <input type="email" id="email" placeholder="Seu e-mail" required>
+              <input type="tel" id="telefone" placeholder="Seu telefone" required>
+            </div>
+            <div class="input-box">
+              <select id="servico" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="iluminacao">Iluminação Inteligente</option>
+                <option value="seguranca">Segurança Residencial</option>
+                <option value="climatizacao">Climatização</option>
+                <option value="audio">Áudio e Vídeo</option>
+                <option value="energia">Energia</option>
+                <option value="assistentes">Assistentes Virtuais</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <textarea id="mensagem" placeholder="Descreva sua necessidade" required></textarea>
+            <div class="btn-enviar">
+              <button type="submit">Solicitar Orçamento</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Rodapé -->
+<footer>
+  <div class="interface">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>SmartHome</h3>
+        <p>Transformando casas em lares inteligentes desde 2025.</p>
+        <div class="btn-social">
+          <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+          <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+          <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#loja">Loja</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="bi bi-envelope"></i> contato@smarthome.com.br</li>
+          <li><i class="bi bi-telephone"></i> (42) 99976-2203</li>
+          <li><i class="bi bi-geo-alt"></i> Guarapuava - PR</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SmartHome - Todos os direitos reservados</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+  // Menu Mobile
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const navList = document.querySelector('.nav-list');
+  const navLinks = document.querySelectorAll('.nav-list li a');
+
+  function toggleMenu() {
+      navList.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      
+      // Fechar dropdowns abertos quando o menu mobile é ativado
+      document.querySelectorAll('.drop-hover .dropp').forEach(drop => {
+          drop.style.display = 'none';
+      });
+  }
+
+  mobileMenu.addEventListener('click', toggleMenu);
+
+  // Fechar menu ao clicar em um link
+  navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+              toggleMenu();
+          }
+      });
+  });
+
+  // Dropdown Menu
+  const dropHovers = document.querySelectorAll('.drop-hover');
+
+  dropHovers.forEach(drop => {
+      if (window.innerWidth <= 768) {
+          const link = drop.querySelector('a');
+          const dropdown = drop.querySelector('.dropp');
+          
+          link.addEventListener('click', (e) => {
+              e.preventDefault();
+              dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+          });
+      }
+  });
+
+  // Carrossel
+  const carrosselContainer = document.querySelector('.carrossel-container');
+  const carrosselItems = document.querySelectorAll('.carrossel-item');
+  const prevBtn = document.querySelector('.carrossel-prev');
+  const nextBtn = document.querySelector('.carrossel-next');
+  let currentIndex = 0;
+  let intervalId;
+
+  // Função para atualizar a posição do carrossel
+  function updateCarrossel() {
+      // Remove a classe active de todos os itens
+      carrosselItems.forEach(item => {
+          item.classList.remove('active');
+      });
+      
+      // Adiciona a classe active ao item atual
+      carrosselItems[currentIndex].classList.add('active');
+      
+      // Move o container para mostrar o item atual
+      carrosselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // Função para avançar para o próximo slide
+  function nextSlide() {
+      currentIndex = (currentIndex < carrosselItems.length - 1) ? currentIndex + 1 : 0;
+      updateCarrossel();
+  }
+
+  // Função para voltar ao slide anterior
+  function prevSlide() {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : carrosselItems.length - 1;
+      updateCarrossel();
+  }
+
+  // Event listeners para os botões de navegação
+  prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetInterval();
+  });
+
+  nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetInterval();
+  });
+
+  // Navegação por teclado
+  document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+          prevSlide();
+          resetInterval();
+      } else if (e.key === 'ArrowRight') {
+          nextSlide();
+          resetInterval();
+      }
+  });
+
+  // Auto-play
+  function startInterval() {
+      intervalId = setInterval(() => {
+          nextSlide();
+      }, 5000);
+  }
+
+  function resetInterval() {
+      clearInterval(intervalId);
+      startInterval();
+  }
+
+  // Inicia o carrossel
+  function initCarrossel() {
+      updateCarrossel();
+      startInterval();
+      
+      // Pausa o auto-play quando o mouse está sobre o carrossel
+      carrosselContainer.addEventListener('mouseenter', () => {
+          clearInterval(intervalId);
+      });
+
+      carrosselContainer.addEventListener('mouseleave', () => {
+          startInterval();
+      });
+  }
+
+  // Inicializa o carrossel quando a página carrega
+  window.addEventListener('load', initCarrossel);
+
+  // Filtro de categorias na loja
+  document.querySelectorAll('.categoria-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+          // Ativa o botão clicado
+          document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Filtra os produtos
+          const categoria = this.dataset.categoria;
+          document.querySelectorAll('.produto-card').forEach(produto => {
+              if (categoria === 'todos' || produto.dataset.categoria === categoria) {
+                  produto.style.display = 'block';
+              } else {
+                  produto.style.display = 'none';
+              }
+          });
+      });
+  });
+  
+  // Função de compra
+  document.querySelectorAll('.btn-comprar').forEach(btn => {
+      btn.addEventListener('click', function() {
+          const produto = this.dataset.produto;
+          
+          // Exibe o formulário de contato pré-preenchido
+          document.getElementById('nome').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('telefone').value = '';
+          document.getElementById('servico').value = 'outro';
+          document.getElementById('mensagem').value = `Gostaria de comprar o produto: ${produto}. Por favor, entre em contato comigo para finalizar a compra.`;
+          
+          // Rola até o formulário de contato
+          document.getElementById('contato').scrollIntoView({behavior: 'smooth'});
+          
+          // Feedback para o usuário
+          alert(`Você selecionou: ${produto}. Por favor, preencha seus dados abaixo para finalizar a compra.`);
+      });
+  });
+
+  // Formulário de orçamento
+  document.getElementById('orcamentoForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Coletar dados
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const telefone = document.getElementById('telefone').value;
+      const servico = document.getElementById('servico').value;
+      const mensagem = document.getElementById('mensagem').value;
+      
+      // Enviar para WhatsApp
+      const texto = `Olá! Meu nome é ${nome}.\nEstou interessado em: ${servico}.\n\n${mensagem}\n\nMeus contatos:\nEmail: ${email}\nTelefone: ${telefone}`;
+      const textoCodificado = encodeURIComponent(texto);
+      
+      window.open(`https://wa.me/5542999762203?text=${textoCodificado}`, '_blank');
+      
+      // Feedback para o usuário
+      alert("Solicitação enviada! Você será redirecionado para nosso WhatsApp.");
+      this.reset();
+  });
+</script>
+
 </body>
 </html>
