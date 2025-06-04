@@ -1,7 +1,7 @@
 /* Hero específico para Climatização */
 .hero-alexa {
   background: linear-gradient(rgba(0, 80, 180, 0.6), rgba(0, 80, 180, 0.6)), 
-              url('../Content/termostato.jpeg') no-repeat center center;
+              url('../Content/climatizacao1.webp') no-repeat center center;
   background-size: cover;
   color: #eaf6ff;
   padding: 120px 0;
