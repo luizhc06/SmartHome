@@ -44,6 +44,7 @@ Projeto desenvolvido para o **Desafio Integrador** da faculdade **Campo Real**, 
 
 - Luiz Henrique de Castro Almeida
 - Thomas Andriel
+- Deividy Ferreira Vicente
 
 ------------------------------------------
 
