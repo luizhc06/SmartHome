@@ -46,3 +46,8 @@ Projeto desenvolvido para o **Desafio Integrador** da faculdade **Campo Real**, 
 - Thomas Andriel
 
 ------------------------------------------
+
+## Demo
+O site está hospedado e disponível para acesso em:
+
+https://smarthome2025.netlify.app/
